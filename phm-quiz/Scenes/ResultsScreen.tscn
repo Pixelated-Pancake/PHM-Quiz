@@ -1,5 +1,9 @@
 [gd_scene format=3 uid="uid://b5c36mjjyv1in"]
 
+[ext_resource type="Script" uid="uid://bls1ip0j3asjo" path="res://Scripts/results_screen.gd" id="1_jxlxw"]
+[ext_resource type="Texture2D" uid="uid://c7u35hbeur7gk" path="res://Assets/Homescreen/PHMBackground.jpg" id="2_gnyy0"]
+[ext_resource type="FontFile" uid="uid://4bore8t1cmud" path="res://Assets/Fonts/Hail_Mary_Sans_v2.ttf" id="2_jxlxw"]
+
 [node name="ResultsScreen" type="Control" unique_id=1616165216]
 layout_mode = 3
 anchors_preset = 15
@@ -7,28 +11,48 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_jxlxw")
 
-[node name="Background" type="TextureRect" parent="." unique_id=1840303422]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+[node name="TextureRect" type="TextureRect" parent="." unique_id=126331793]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -120.0
+offset_top = -69.0
+offset_right = 1459.0
+offset_bottom = 819.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_gnyy0")
 
-[node name="MainLayout" type="VBoxContainer" parent="." unique_id=206391802]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=839531001]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
-[node name="ResultsTitle" type="Label" parent="MainLayout" unique_id=1680234747]
+[node name="MainLayout" type="VBoxContainer" parent="CenterContainer" unique_id=206391802]
 layout_mode = 2
+theme_override_constants/separation = 15
+alignment = 1
 
-[node name="ScoreLabel" type="Label" parent="MainLayout" unique_id=354078431]
+[node name="ScoreLabel" type="Label" parent="CenterContainer/MainLayout" unique_id=354078431]
 layout_mode = 2
+text = "Placeholder"
 
-[node name="PercentageLabel" type="Label" parent="MainLayout" unique_id=1869945855]
+[node name="PercentageLabel" type="Label" parent="CenterContainer/MainLayout" unique_id=1869945855]
 layout_mode = 2
+text = "Placeholder"
 
-[node name="RestartButton" type="Button" parent="MainLayout" unique_id=2049426493]
+[node name="HomeButton" type="Button" parent="CenterContainer/MainLayout" unique_id=1759889746]
+custom_minimum_size = Vector2(500, 60)
+custom_maximum_size = Vector2(600, -1)
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_jxlxw")
+text = "Return Home"
 
-[node name="HomeButton" type="Button" parent="MainLayout" unique_id=1759889746]
-layout_mode = 2
+[connection signal="pressed" from="CenterContainer/MainLayout/HomeButton" to="." method="_on_home_button_pressed"]

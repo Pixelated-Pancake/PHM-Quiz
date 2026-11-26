@@ -5,9 +5,6 @@
 [ext_resource type="FontFile" uid="uid://4bore8t1cmud" path="res://Assets/Fonts/Hail_Mary_Sans_v2.ttf" id="2_int8w"]
 [ext_resource type="FontFile" uid="uid://dcf4wa6y606v2" path="res://Assets/Fonts/ChelseaMarket-Regular.ttf" id="3_00it4"]
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_j5nep"]
-content_margin_top = 19.0
-
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_85gu0"]
 bg_color = Color(0.16078432, 0.05882353, 0.05882353, 0.5764706)
 corner_detail = 20
@@ -49,30 +46,6 @@ theme_override_constants/separation = 20
 [node name="TopBar" type="HBoxContainer" parent="MarginContainer/MainLayout" unique_id=990934117]
 layout_mode = 2
 size_flags_vertical = 0
-
-[node name="QuestionNumber" type="Label" parent="MarginContainer/MainLayout/TopBar" unique_id=1273727153]
-layout_mode = 2
-theme_override_fonts/font = ExtResource("2_int8w")
-text = "Question: 1 / 10 "
-
-[node name="Control" type="Control" parent="MarginContainer/MainLayout/TopBar" unique_id=755255153]
-layout_mode = 2
-size_flags_horizontal = 3
-
-[node name="ScoreLabel" type="Label" parent="MarginContainer/MainLayout/TopBar" unique_id=717885559]
-layout_mode = 2
-theme_override_fonts/font = ExtResource("2_int8w")
-text = "Score: 0"
-
-[node name="ProgressBar" type="ProgressBar" parent="MarginContainer/MainLayout" unique_id=1287061272]
-custom_minimum_size = Vector2(0, 30)
-layout_mode = 2
-theme_override_fonts/font = ExtResource("2_int8w")
-theme_override_font_sizes/font_size = 15
-theme_override_styles/background = SubResource("StyleBoxEmpty_j5nep")
-max_value = 10.0
-step = 1.0
-value = 1.0
 
 [node name="QuestionLabel" type="Label" parent="MarginContainer/MainLayout" unique_id=1330346184]
 layout_mode = 2
