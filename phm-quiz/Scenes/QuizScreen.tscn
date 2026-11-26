@@ -1,0 +1,92 @@
+[gd_scene format=3 uid="uid://cpw5hlkeq2t8s"]
+
+[ext_resource type="Texture2D" uid="uid://t5k3g5w3r3tn" path="res://Assets/QuizScreen/PHMWallpaper.jpeg" id="1_j5nep"]
+
+[node name="QuizScreen" type="Control" unique_id=1996344066]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Background" type="TextureRect" parent="." unique_id=1211929751]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_j5nep")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=262374615]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 30
+theme_override_constants/margin_top = 30
+theme_override_constants/margin_right = 30
+theme_override_constants/margin_bottom = 30
+
+[node name="MainLayout" type="VBoxContainer" parent="MarginContainer" unique_id=1178527131]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="TopBar" type="HBoxContainer" parent="MarginContainer/MainLayout" unique_id=990934117]
+layout_mode = 2
+size_flags_vertical = 0
+
+[node name="QuestionNumber" type="Label" parent="MarginContainer/MainLayout/TopBar" unique_id=1273727153]
+layout_mode = 2
+text = "Question: 1 / 10 "
+
+[node name="Control" type="Control" parent="MarginContainer/MainLayout/TopBar" unique_id=755255153]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ScoreLabel" type="Label" parent="MarginContainer/MainLayout/TopBar" unique_id=717885559]
+layout_mode = 2
+text = "Score: 0"
+
+[node name="ProgressBar" type="ProgressBar" parent="MarginContainer/MainLayout" unique_id=1287061272]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+max_value = 10.0
+step = 1.0
+value = 1.0
+
+[node name="QuestionLabel" type="Label" parent="MarginContainer/MainLayout" unique_id=1330346184]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "Who is the main character of the movie?"
+autowrap_mode = 2
+
+[node name="AnswersContainer" type="VBoxContainer" parent="MarginContainer/MainLayout" unique_id=1640209429]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 15
+
+[node name="AnswerA" type="Button" parent="MarginContainer/MainLayout/AnswersContainer" unique_id=1518169017]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+
+[node name="AnswerB" type="Button" parent="MarginContainer/MainLayout/AnswersContainer" unique_id=1651051038]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+
+[node name="AnswerC" type="Button" parent="MarginContainer/MainLayout/AnswersContainer" unique_id=540468024]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+
+[node name="AnswerD" type="Button" parent="MarginContainer/MainLayout/AnswersContainer" unique_id=1565468424]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+
+[node name="FeedbackLabel" type="Label" parent="MarginContainer/MainLayout" unique_id=1250185079]
+layout_mode = 2
+
+[node name="NextButton" type="Button" parent="MarginContainer/MainLayout" unique_id=999482147]
+layout_mode = 2
