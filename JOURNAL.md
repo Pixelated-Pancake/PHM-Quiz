@@ -8,3 +8,5 @@
 ## Day 02 - 26 / 11 / 2026
 - I created basic node trees for the quiz and result scenes. Here's a pic of the node tree of the quiz page :D
 ![Node Tree](github-images/Nodetree.png)
+- Started making the scenes aesthetically pleasing, cuz they looked BAD. Added a few other fonts as well.
+![Quiz Scene](github-images\QuizScene.png)

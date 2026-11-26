@@ -7,6 +7,10 @@
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_j5nep"]
 content_margin_top = 19.0
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_85gu0"]
+bg_color = Color(0.16078432, 0.05882353, 0.05882353, 0.5764706)
+corner_detail = 20
+
 [node name="QuizScreen" type="Control" unique_id=1996344066]
 layout_mode = 3
 anchors_preset = 15
@@ -116,4 +120,11 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="NextButton" type="Button" parent="MarginContainer/MainLayout" unique_id=999482147]
+custom_minimum_size = Vector2(500, 35)
+custom_maximum_size = Vector2(500, -1)
 layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("2_int8w")
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxFlat_85gu0")
+text = "Next Question"
