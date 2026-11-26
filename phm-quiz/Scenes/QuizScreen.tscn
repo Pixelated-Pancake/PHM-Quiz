@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://cpw5hlkeq2t8s"]
 
+[ext_resource type="Script" uid="uid://g12qgsu0lf4c" path="res://Scripts/QuizScreen.gd" id="1_00it4"]
 [ext_resource type="Texture2D" uid="uid://t5k3g5w3r3tn" path="res://Assets/QuizScreen/PHMWallpaper.jpeg" id="1_j5nep"]
 [ext_resource type="FontFile" uid="uid://4bore8t1cmud" path="res://Assets/Fonts/Hail_Mary_Sans_v2.ttf" id="2_int8w"]
 [ext_resource type="FontFile" uid="uid://dcf4wa6y606v2" path="res://Assets/Fonts/ChelseaMarket-Regular.ttf" id="3_00it4"]
@@ -18,6 +19,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_00it4")
 
 [node name="Background" type="TextureRect" parent="." unique_id=1211929751]
 layout_mode = 1
@@ -128,3 +130,9 @@ theme_override_fonts/font = ExtResource("2_int8w")
 theme_override_font_sizes/font_size = 15
 theme_override_styles/normal = SubResource("StyleBoxFlat_85gu0")
 text = "Next Question"
+
+[connection signal="pressed" from="MarginContainer/MainLayout/AnswersContainer/AnswerA" to="." method="_on_answer_a_pressed"]
+[connection signal="pressed" from="MarginContainer/MainLayout/AnswersContainer/AnswerB" to="." method="_on_answer_b_pressed"]
+[connection signal="pressed" from="MarginContainer/MainLayout/AnswersContainer/AnswerC" to="." method="_on_answer_c_pressed"]
+[connection signal="pressed" from="MarginContainer/MainLayout/AnswersContainer/AnswerD" to="." method="_on_answer_d_pressed"]
+[connection signal="pressed" from="MarginContainer/MainLayout/NextButton" to="." method="_on_next_button_pressed"]

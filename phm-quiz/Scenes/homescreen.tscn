@@ -116,3 +116,4 @@ text = "Start"
 script = ExtResource("7_244ny")
 
 [connection signal="pressed" from="QuitButton" to="QuitButton" method="_on_pressed"]
+[connection signal="pressed" from="StartButton" to="StartButton" method="_on_pressed"]
