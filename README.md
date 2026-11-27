@@ -18,6 +18,9 @@
 - Pretty smooth, I need to learn GDScript for future projects, refer to the journal lol.
 - Exporting to itch was a headache as I kept messing it up (took 30 mins that were untracked-)
 
+## AI Declaration
+- AI was used to help me code. Refer to the journal.md file for more info, but it wasnt directly used. I used it to learn about functions, and other parts of GDScript and all code is hand written. I used comments along the way as a reference for future projects
+
 ## Credits
 - Thanks to u/snark_5885 on Reddit for making my life so much easier by making a Project Hail Mary font file :] 
 - View the Reddit post [here](https://www.reddit.com/r/ProjectHailMary/comments/1sn03lj/i_recreated_the_project_hail_mary_font/)
