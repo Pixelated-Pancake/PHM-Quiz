@@ -1,6 +1,8 @@
 # The Project Hail Mary Quiz
 ### Project for #ticket-ysws
 
+## DISCLAIMER: THIS PROJECT IS NOT ASSOCIATED WITH PROJECT HAIL MARY, ANDY WEIR, AMAZON MGM STUDIOS, OR ANY OTHER AFFILIATED PARTNERS. THIS IS PURELY A FAN BASED PROJECT AND NO COPYRIGHT IS INTENDED.
+
 ## About
 - This is a simple quiz game I made on Godot for Project Hail Mary!
 - It was an amazing movie, anddd it was also the first movie I watched alone (very peak experience) and honestly, it was amazing
