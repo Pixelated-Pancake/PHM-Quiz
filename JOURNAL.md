@@ -1,3 +1,6 @@
+# Project Hail Mary Quiz
+## Total Time Trached: 4.1h
+
 ## Day 01 - 25 / 11 / 2026
 - Started the project!
 - Learnt how to add hyperlinks to text in Godot using BBCode
@@ -12,3 +15,8 @@
 ![Quiz Scene](github-images/QuizScene.png)
 - I coded a LOT today as well - I didnt copy from an AI assistant buut I sadly had to ask it stuff cuz I've never coded with GDScript before. However, I am happy to say that I asked it once, and replicated it (with a lot of errors) without much use of AI :> Here's a pic btw!
 ![Code](github-images/Code.png)
+
+## Day 03 - 27 / 11 / 2026
+- Finished!! Minor edits to code anddd I published it to itch
+- EXPORTING WAS SUCH A HEADACHE AHHHHHHHHHHHHHHHHHHHHHHHHHH
+- Go play it at https://pixelatedpancake.itch.io/phmquiz
